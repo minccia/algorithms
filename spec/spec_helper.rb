@@ -1,4 +1,4 @@
-require './loader'
+require './config/loader'
 
 RSpec.configure do |config|
 
