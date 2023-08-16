@@ -3,8 +3,8 @@ module Recursion
     def self.qsort(list)
       return list if list.length < 2 
   
-      pivot = list.first 
-      list.shift 
+      pivot = list.sample
+      list.delete(pivot)
       less = list.filter { |num| num <= pivot }
       greater = list.filter { |num| num > pivot }
   
